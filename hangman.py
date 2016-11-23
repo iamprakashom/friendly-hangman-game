@@ -89,7 +89,8 @@ def start():
 
 def game():
     # Create a set of words to play the game with
-    secret_word = ["cat", "dog", "bird", "nest", "sun", "tree"]
+    secret_word = ["cat", "dog", "cow", "lion", "tiger", "rat", "monkey",
+                   "fox", "zebra", "ape", "donkey", "elephant", "wolf", "horse"]
     # Use the choice function from random mod to select a word
     word = random.choice(secret_word)
     word_length = len(word)
@@ -147,7 +148,7 @@ def game():
 
 
 def guess_letter():
-    letter = input("Take a guess at mystery word: ")
+    letter = input("Take a guess at mystery animal name: ")
     letter.strip()
     letter.lower()
     print(letter)
